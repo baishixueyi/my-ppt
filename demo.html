@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>我的ppt-markdown简约版</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/black.css" id="theme"> -->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_1796366_xe7tjz34dj.css">
+		<script src="//cdn.jsdelivr.net/npm/leancloud-storage@4.5.3/dist/av-min.js"></script>
+
+		<!-- Printing and PDF exports -->
+		<!-- <script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script> -->
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="control">
+			<span class="iconfont icon-setting"></span>
+		</div>
+		<div class="menu">
+			<span class="iconfont icon-close"></span>
+			<div class="detail">
+				<div class="tab active"><span class="iconfont icon-content"></span> 内容编辑</div>
+				<div class="tab"><span class="iconfont icon-theme"></span>主题与特效</div>
+				<div class="tab"><span class="iconfont icon-download"></span>下载PDF</div>
+				<div class="tab"><span class="iconfont icon-speaker"></span>演讲者模式</div>
+				<div class="content active">
+					<div class="header">编辑</div>
+					<div class="body editor">
+						<textarea></textarea>
+						<div class="uploader">
+							<input type="file" id="img-upload" accept="image/*">
+							<label for="img-upload">点击上传图片，限制jpg,png,gif(大小限制在2M内)</label>
+						</div>
+						<div>
+							<button class="button-save">保存</button>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="header">主题特效</div>
+					<div class="body theme">
+						<h5>主题</h5>
+						<div class="themes">
+							<figure data-name="beige">
+								<img src="./img/beige.png" alt="beige">
+								<figcaption>beige</figcaption>
+							</figure>
+							<figure data-name="black">
+								<img src="./img/black.png" alt="black">
+								<figcaption>black</figcaption>
+							</figure>
+							<figure data-name="blood">
+								<img src="./img/blood.png" alt="blood">
+								<figcaption>blood</figcaption>
+							</figure>
+							<figure data-name="league">
+								<img src="./img/league.png" alt="league">
+								<figcaption>league</figcaption>
+							</figure>
+							<figure data-name="moon">
+								<img src="./img/moon.png" alt="moon">
+								<figcaption>moon</figcaption>
+							</figure>
+							<figure data-name="night">
+								<img src="./img/night.png" alt="night">
+								<figcaption>night</figcaption>
+							</figure>
+							<figure data-name="serif">
+								<img src="./img/serif.png" alt="serif">
+								<figcaption>serif</figcaption>
+							</figure>
+							<figure data-name="simple">
+								<img src="./img/simple.png" alt="simple">
+								<figcaption>simple</figcaption>
+							</figure>
+							<figure data-name="sky">
+								<img src="./img/sky.png" alt="sky">
+								<figcaption>sky</figcaption>
+							</figure>
+							<figure data-name="solarized">
+								<img src="./img/solarized.png" alt="solarized">
+								<figcaption>solarized</figcaption>
+							</figure>
+							<figure data-name="white">
+								<img src="./img/white.png" alt="white">
+								<figcaption>white</figcaption>
+							</figure>
+							<figure data-name="custom">
+								<img src="./img/custom.png" alt="custom">
+								<figcaption>custom</figcaption>
+							</figure>
+						</div>
+						<h5>转场</h5>
+						<select class="select transiton">
+							<option value="slide">滑动效果</option>
+							<option value="fade">渐变效果</option>
+							<option value="convex">凸面效果</option>
+							<option value="concave">凹面效果</option>
+							<option value="zoom">放大缩小效果</option>
+						</select>
+						<h5>对齐方式</h5>
+						<select class="select align"">
+							<option value="center">居中</option>
+							<option value="left-top">左上</option>
+						</select>
+					</div>
+				</div>
+				<div class="content">
+					<div class="header">下载</div>
+					<div class="body download">点击下载PDF</div>
+				</div>
+				<div class="content">
+					<div class="header">演讲者模式</div>
+					<div class="body speaker">按<strong> S </strong>进入演讲者模式</div>
+				</div>
+			</div>
+		</div>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+		<script src="js/main.js"></script>
+		
+	</body>
+</html>
