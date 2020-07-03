@@ -31,5 +31,5 @@
 ``
 2、按照使用方法进行使用
 ## 预览效果
-https://baishixueyi.github.io/my-ppt---markdown/
+https://baishixueyi.github.io/my-ppt/
 
