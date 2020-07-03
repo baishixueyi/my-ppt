@@ -123,7 +123,7 @@ const Editor = {
         `
         let markStr = localStorage.markdownStr
         this.$slides.innerHTML= convert(markStr || template)
-        this.$textarea.innerHTML = markStr
+        this.$textarea.innerHTML = (markStr || template)
         
         //转场
         let transtion = localStorage.trans || 'slide'
